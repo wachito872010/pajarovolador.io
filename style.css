@@ -1,89 +1,133 @@
 body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Helvetica, sans-serif;
+
+  font-family: "Lato", sans-serif;
+
+  background-color: #FFFFFF;
+
+}
+
+
+
+.sidepanel  {
+
+  width: 0;
+
+  position: fixed;
+
+  z-index: 1;
+
+  height: 100%;
+
+  top: 0;
+
+  left: 0;
+
+  background-color: #E6E6E6;
+
   overflow-x: hidden;
+
+  transition: 0.5s;
+
+  padding-top: 60px;
+
 }
 
-canvas {
+
+
+.sidepanel a {
+
+  padding: 8px 8px 8px 32px;
+
+  text-decoration: none;
+
+  font-size: 25px;
+
+  color: #000000;
+
+  display: block;
+
+  transition: 0.3s;
+
+}
+
+
+
+.sidepanel a:hover {
+
+  color: #f1f1f1;
+
+}
+
+
+
+.sidepanel .closebtn {
+
   position: absolute;
+
+  top: 0;
+
+  right: 25px;
+
+  font-size: 36px;
+
 }
 
-.ctn {
-  position: relative;
-  width: 360px;
-  height: 640px;
-}
 
-#scoreboard {
-  position: absolute;
-  top: 540px;
-  width: 360px;
-  text-align: center;
-  font-size: 50px;
-  color: #333333;
-}
 
-#start-screen {
-  position: absolute;
-  top: 20px;
-}
+.openbtn {
 
-#gameover-screen {
-  visibility: hidden;
-  position: absolute;
-  width: 360px;
-  height: 640px;
-  opacity: 0;
-  transition: opacity 1s;
-  text-align: center;
-}
 
-#gameover {
-  width: 280px;
-  background-color: #333333;
-  color: #ffffff;
-  padding: 10px 20px;
-  font-size: 40px;
-  letter-spacing: 4px;
-  margin: auto;
-  margin-top: 200px;
-}
 
-#replay {
-  width: 100px;
-  background-color: #333333;
-  color: #ffffff;
-  padding: 10px 20px;
   font-size: 20px;
-  letter-spacing: 4px;
-  transition: background-color 1s;
-  margin: 100px auto;
+
+  background-color: #E6E6E6;
+
+  color: black;
+
+  padding: 10px 15px;
+
+  border: none;
+
+  border-radius: 100px;
+
 }
 
-#replay:hover {
-  background-color: #ffffff;
-  color: #333333;
-  cursor: pointer;
+
+
+.openbtn:hover {
+
+  background-color:#BDBDBD
+
 }
 
-#ctrl-ctn {
-  position: absolute;
-  top: 300px;
-  left: 80px;
+
+
+.image {
+
   opacity: 1;
-  transition: opacity 1s;
+
+  display: block;
+
+  transition: .5s ease;
+
+  backface-visibility: hidden;
+
+  float: left;
+
+  width: 126px;
+
+  height: 189px;
+
+  margin: 3px;
+
+ 
+
+ 
+
 }
 
-.ctrl-btn {
-  background-color: #333333;
-  color: #ffffff;
-  text-align: center;
-  font-size: 18px;
-  padding: 8px 16px;
-  margin: 10px;
+.image:hover {
+
+  opacity: 0.3;
+
 }
